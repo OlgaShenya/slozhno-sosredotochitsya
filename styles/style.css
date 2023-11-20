@@ -6,7 +6,6 @@ html {
 }
 .page {
   --padding: 10px;
-  padding: 0 var(--padding);
   overflow-x: hidden;
 
   background: var(--backgroune-img-url), lightgray 50% / cover no-repeat;
@@ -64,7 +63,7 @@ html {
 .decorated-zone {
   display: grid;
   height: 100vb;
-  padding: var(--padding) 0;
+  padding: var(--padding);
   width: 100%;
 }
 
@@ -192,6 +191,7 @@ a:focus-visible {
 /*===================================*/
 
 .main {
+  padding: 0 var(--padding);
   margin: 40px 0;
   display: grid;
   grid-template-rows: auto auto auto auto;
