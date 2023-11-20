@@ -1,0 +1,42 @@
+/*
+  Специально для тёмной темы при наличии класса,
+  здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+.page.theme_dark {
+  --accent-color: #ff0070;
+  --main-color: #000028;
+  --text-color: #f1b2ce;
+  --focus-color: #db00ff;
+  --theme-menu-color: #ff0070;
+  --article-title-bg: #ff0070;
+  --menu-hover-color: rgba(255, 0, 112, 0.4);
+
+  --backgroune-img-url: url("/images/cover-image-dark.png");
+}
+html:has(.page.page.page.theme_dark) {
+  --document-bg-color: #000028;
+}
+.page.theme_dark .header__rec {
+  visibility: visible;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --document-bg-color: #000028;
+  }
+  .page {
+    --accent-color: #ff0070;
+    --main-color: #000028;
+    --text-color: #f1b2ce;
+    --focus-color: #db00ff;
+    --theme-menu-color: #ff0070;
+    --article-title-bg: #ff0070;
+    --menu-hover-color: rgba(255, 0, 112, 0.4);
+
+    --backgroune-img-url: url("/images/cover-image-dark.png");
+  }
+  .page .header__rec {
+    visibility: visible;
+  }
+}
