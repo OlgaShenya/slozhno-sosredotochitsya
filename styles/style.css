@@ -8,8 +8,8 @@ html {
   --padding: 10px;
   overflow-x: hidden;
 
-  background: var(--backgroune-img-url), lightgray 50% / cover no-repeat;
   background-attachment: fixed;
+  background: var(--backgroune-img-url);
   background-size: auto 100%;
   background-position: center;
 
@@ -234,6 +234,7 @@ img {
 }
 @media (min-width: 769px) {
   .page {
+    background-attachment: fixed;
     --padding: 20px;
   }
   .header__theme-menu {
@@ -338,6 +339,7 @@ img {
 }
 @media (min-width: 376px) and (max-width: 768px) {
   .page {
+    background-attachment: fixed;
     --padding: 20px;
   }
   .header__theme-menu {
