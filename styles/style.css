@@ -6,7 +6,7 @@ html {
 }
 .page {
   --padding: 10px;
-  padding: var(--padding);
+  padding: 0 var(--padding);
   overflow-x: hidden;
 
   background: var(--backgroune-img-url), lightgray 50% / cover no-repeat;
@@ -63,7 +63,8 @@ html {
 
 .decorated-zone {
   display: grid;
-  height: calc(100vb - var(--padding) * 2);
+  height: 100vb;
+  padding: var(--padding) 0;
   width: 100%;
 }
 
