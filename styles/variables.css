@@ -3,8 +3,13 @@
   и их переопределение под различные устройства
 */
 :root {
-  --accent-color: #ff0070;
-  --main-color: #000028;
-  --text-color: #f1b2ce;
-  --focus-color: #db00ff;
+	--accent-color: #ff0070;
+	--main-color: #000028;
+	--text-color: #f1b2ce;
+	--focus-color: #db00ff;
+	--theme-menu-color: #ff0070;
+	--article-title-bg: #ff0070;
+	--menu-hover-color: rgba(255, 0, 112, 0.4);
+
+	--padding: 10px;
 }
